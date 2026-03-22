@@ -7,15 +7,16 @@
 <title>Wedding Invitation</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- INTRO SCREEN -->
+<!-- INTRO -->
 <div id="intro">
     <div class="invite-box" onclick="openInvite()">
-        <h2>💌 Tap to Open Invitation</h2>
+        💌 Tap to Open Invitation
     </div>
 </div>
 
@@ -25,16 +26,17 @@
     <source src="music.mp3" type="audio/mp3">
 </audio>
 
-<!-- SCROLL INVITATION -->
+<!-- SCROLL -->
 <div id="scrollWrapper" class="hidden">
 
-    <div class="scroll">
+    <div class="rod top"></div>
 
+    <div class="scroll">
         <h1 id="names"></h1>
         <p class="subtitle">Together with their families</p>
 
         <p class="main-text">
-            Request the honor of your presence at their wedding celebration
+            Request the honour of your presence at their wedding
         </p>
 
         <div class="details">
@@ -43,15 +45,16 @@
             <p><b>Venue:</b> Grand Palace, Mumbai</p>
         </div>
 
-        <div class="map">
-            <iframe src="https://maps.google.com/maps?q=mumbai&output=embed"></iframe>
-        </div>
+        <iframe src="https://maps.google.com/maps?q=mumbai&output=embed"></iframe>
 
-        <p class="footer">We look forward to celebrating with you ❤️</p>
-
+        <p class="footer">With love ❤️</p>
     </div>
 
+    <div class="rod bottom"></div>
+
 </div>
+
+<canvas id="petals"></canvas>
 
 <script src="script.js"></script>
 </body>
